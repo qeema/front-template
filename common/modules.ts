@@ -1,11 +1,11 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface Num {
-  count: number,
-};
+  count: number;
+}
 
 const initialState: Num = {
-  count: 100, 
+  count: 100,
 };
 
 const testModule = createSlice({
@@ -13,10 +13,10 @@ const testModule = createSlice({
   initialState,
   reducers: {
     addCount(state: Num, action: PayloadAction<any>) {
-      const {count} = action.payload;
+      const { count } = action.payload;
       state.count = count + 1;
-    }
-  }
-})
+    },
+  },
+});
 
 export default testModule;

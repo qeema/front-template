@@ -16,3 +16,11 @@ npm install --save @reduxjs/toolkit react-redux @types/react-redux
 npm install
 npm run dev
 ```
+
+## Lint
+- https://paulintrognon.fr/blog/post/typescript-prettier-eslint-next-js
+
+```sh
+npm install --dev eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+npm install --dev  add --dev prettier eslint-plugin-prettier eslint-config-prettier
+```
