@@ -1,17 +1,17 @@
-import React from 'react'
-import Container from '@material-ui/core/Container'
-import Typography from '@material-ui/core/Typography'
-import Box from '@material-ui/core/Box'
-import ProTip from '../src/ProTip'
-import Link from '../src/Link'
-import Copyright from '../src/Copyright'
+import React from 'react';
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import ProTip from '../src/ProTip';
+import Link from '../src/Link';
+import Copyright from '../src/Copyright';
 
-import { useSelector } from 'react-redux'
-import { RootState } from '../common/rootReducer'
+import { useSelector } from 'react-redux';
+import { RootState } from '../common/rootReducer';
 
 const Index: React.FunctionComponent = function () {
-  const { count } = useSelector((state: RootState) => state.test)
-  console.log(count)
+  const { count } = useSelector((state: RootState) => state.test);
+  console.log(count);
 
   return (
     <Container maxWidth="sm">
@@ -26,7 +26,7 @@ const Index: React.FunctionComponent = function () {
         <Copyright />
       </Box>
     </Container>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
